@@ -7,7 +7,7 @@
     android:background="@color/black_overlay"
     android:fitsSystemWindows="true"
     android:focusable="auto"
-    android:foregroundTint="#FFFFFF"
+    android:foregroundTint="#000000"
     tools:context=".MainActivity">
 
     <ScrollView

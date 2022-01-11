@@ -21,7 +21,7 @@ import java.text.ParseException;
 public class MainActivity extends AppCompatActivity {
 
     //MAKE BUTTONS BUTTONS
-    Button WSRlinkButton, IcampusLinkButton, PTClinkButton, KWWLLinkButton;
+    Button WSRlinkButton, IcampusLinkButton, PTClinkButton, KWWLLinkButton, HighSchoolButton;
 
     //Make links
     String WSRLINK = "https://www.wsr.k12.ia.us/";
@@ -91,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
         IcampusLinkButton = (Button) findViewById(R.id.Icampus);
         PTClinkButton = (Button) findViewById(R.id.PTCbutton);
         KWWLLinkButton = (Button) findViewById(R.id.KWWLbutton);
+        HighSchoolButton = (Button) findViewById(R.id.HighSchoolButton);
 
 
         //set visibility
@@ -134,6 +135,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Uri uri = Uri.parse(KWWLradarLink);
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri); startActivity(intent);
+
+            }
+        });
+
+        HighSchoolButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.activity_high_school);
 
             }
         });
